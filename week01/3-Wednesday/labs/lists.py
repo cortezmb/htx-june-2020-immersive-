@@ -12,15 +12,27 @@ planet6 = "Mercury"
 planet7 = "Uranus"
 planet8 = "Venus"
 
+planets = ["Earth", "Jupiter", "Neptune", "Mars", "Saturn", "Mercury", "Uranus", "Venus"]
+# print(planets[3])
+
 # 2. Print out how many elements are in the planet list
 
+# len(planets)
+# print(len(planets))
 
 # 3. Create a while loop that iterates through each of the items in the planet list
 # and changes them to lowercase .
 
+# index = 0
+# while index < len(planets):
+#     planets[index] = planets[index].lower()
+#     index += 1
+# print(planets)
 
 # 4. Add Pluto to the planet list.
 
+planets.append("Pluto")
+# print(planets)
 
 # 5. Combine the follwing 2 lists into a list called Houston.
 # Find how many cities are listed in the Houston list
@@ -31,23 +43,70 @@ HoustonCities = ["Katy", "Memorial City", "Sugar Land",
                  "The Heights", "River Oaks", "Pasadena"]
 ClearLakeCities = ["League City", "Kemah", "Seabrook", "Webster", "El Lago"]
 
+#concatenate
+Houston = HoustonCities + ClearLakeCities
+
+print(Houston)
+
+# appends
+# index = 0
+
+# while index < len(HoustonCities)
+
+# HoustonCities.append(ClearLakeCities)
+# print(HoustonCities) 
+
+# extends
+# HoustonCities.extend([ClearLakeCities])
+# print(HoustonCities)
+
+# print(f"Number of cities in Houston is {len(Houston)}")
+
 # 6. Since Pluto isn't really a planet, delete it from the planet list
 
+# del planets[8]
+# print(planets)
 
 # 7. Create the following lists that are a subset of the Houston list:
 # htx1 = The first 4 cities
+
+
+# htx1 = Houston[0:4]
+# print(htx1)
+
 # htx2 = Cities 3-6
+
+# htx2 = Houston[2:6]
+# print(htx2)
+
 # htx3 = The last 2 cities
+
+# htx3 = Houston[9:]
+# print(htx3)
 
 # 7. Insert Denver in the Houston list after The Heights
 
+# Houston.insert(4, "Denver")
+# print(Houston)
+
 # 8.  Remove the last city from the Houston List
+
+# Houston.pop()
+# print(Houston)
 
 # 9. Get the index of Seabrook from the Houston list
 
+# print(Houston.index("Seabrook"))
+
 # 10. Sort the list of cities
 
+Houston.sort()
+print(Houston)
+
 # 11. Copy the Houston list to a list called USCities
+
+# USCities = Houston.copy()
+# print(USCities)
 
 # 12. Remove all items from the Houston list
 
