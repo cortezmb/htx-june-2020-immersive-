@@ -3,6 +3,7 @@
 # Each key is the name of the zodiac
 
 
+<<<<<<< HEAD
 zodiac = {"Aries": "The Warrior",
           "Taurus": "The Builder",
           "Gemini": "The Messenger", 
@@ -66,6 +67,42 @@ for key, value in zodiac.items():
 # Will print out a list with key and values
 # for key, value in phonebook_dict.items():
 #     print(f"{key}  {value}")
+=======
+# Aries - The Warrior 
+# Taurus - The Builder 
+# Gemini - The Messenger 
+# Cancer - The Mother 
+# Leo - The King 
+# Virgo -The Analyst 
+# Libra - The Judge 
+# Scorpio - The Magician 
+# Sagittarius - the Gypsy 
+# Capricorn - the Father 
+# Aquarius - The Thinker 
+# Pisces - TheMystic 
+
+zodiac["Virgo"]
+
+#1a. Retrieve information about your zodiac from the zodiac dictionary
+
+#2. Given the following dictionary
+
+phonebook_dict = {
+  'Alice': '703-493-1834',
+  'Bob': '857-384-1234',
+  'Elizabeth': '484-584-2923'
+}
+
+
+phonebook_dict["Kareem"] = "938-489-1234"
+# 2a. Print Elizabeth's phone number
+# 2b. Add a entry to the dictionary: Kareem's number is 938-489-1234.
+# 2c. Delete Alice's phone entry.
+# 2d. Change Bob's phone number to '968-345-2345'.
+# 2e. Print all the phone entries.
+
+
+>>>>>>> 7f141750c080db09f60ab01bff0c5471a5c063ce
 # 3. Nested dictionaries
 
 

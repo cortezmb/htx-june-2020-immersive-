@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Selectors</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        h1{background-color: yellow;}
+
+        ul > li > a{
+            color: purple;
+            text-decoration: none;
+        }
+
+        h5 + p{
+            background-color: salmon;
+        }
+
+        p > a{
+            color: green;
+            text-decoration: none;
+        }
+
+        ol > p{
+            background-color: lightblue;
+            color: white;
+            padding: 10px;
+        }
+
+        .dark{
+            background-color: darkblue;
+        }
+
+        .light{
+            background-color: lightgreen;
+        }
+
+        #sample{
+            font-style: oblique;
+            background-color: red;
+            font-weight:bolder;
+            font-size:x-large;
+        }
+
+        h3:nth-child(2){
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><a id="top">Kitchen Garden Calendar</a></h1>
+    <p id="introduction">Here you can read our handy guide about what to do when.</p>
+    <h2>Spring</h2>
+    <ul>
+        <li><a href="mulch.html">Spring mulch vegetable beds</a></li>
+        <li><a href="potato.html">Plant out early potatoes</a></li>
+        <li><a href="tomato.html">Sow tomato seeds</a></li>
+        <li><a href="beet.html">Sow beet seeds</a></li>
+        <li><a href="zucchini.html">Sow zucchini seeds</a></li>
+        <li><a href="rhubarb.html">Deadhead rhubarb flowers</a></li>
+    </ul>
+    <p class="note">This page was written by <a href="mailto:ivy@example.org">ivy@example.org</a> for <a
+            href="http://www.example.org">Example</a>.</p>
+    <p><a href="#top">Top of page</a></p>
+
+    <h1>Did you know ...</h1>
+
+    <ol>
+
+    <p class="dark"> 
+        1. that La Parka Jr. (pictured) won the Mexican National Cruiserweight Championship, relinquished the title when he changed his ring name, then won it again under his new name?
+    </p>
+
+    <p class="light">
+        
+        2. that the hymn "Praise, my soul, the King of heaven", sung at the wedding of Princess Elizabeth, now Queen Elizabeth II, was written by Henry Francis Lyte, who also wrote the well-known "Abide with Me"?
+    </p>
+
+    <p class="dark">
+        
+        3. that Hungarian émigré Frank Varga followed in his father's footsteps to become a noted sculptor?
+        ... that Singaporean authorities hope that the Mandai Wildlife Bridge will reduce the risk of animals such as Sunda pangolins and leopard cats becoming roadkill?
+    </p>
+
+    <p class="light">
+        
+        4. that Arlington State College left the Texas A&M University System after 48 years to join the University of Texas System?
+    </p>
+
+    <p id="sample">
+        5. that the annual film festival in Kigali is known as "Hillywood"?
+        ... that William Jefferson Hardin was the first black member of the Wyoming House of Representatives?
+    </p>
+
+    </ol>
+
+    <h5>H5 Tag</h5>
+    <p>
+        Paragraph tag that is sibling of H5 tag
+    </p>
+
+    <h3>Hello World!</h3>
+    <h3>Hello World!</h3>
+    <h3>Hello World!</h3>
+    <h3>Hello World!</h3>
+    <h3>Hello World!</h3>
+    <h3>Hello World!</h3>
+</body>
+
+</html>

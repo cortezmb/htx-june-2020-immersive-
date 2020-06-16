@@ -1,0 +1,20 @@
+h1{
+    border-color: yellow !important;
+}
+.myHeader{
+    background-color: salmon;
+}
+
+#myIdRule{
+    background-color: green;
+}
+
+div{
+    font-size: 40px;
+    color: purple
+}
+
+text{
+    font-family: 'Dancing Script', cursive;
+}
+
