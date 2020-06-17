@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+}
+
+.container{
+    background-color: lightblue;
+    height: 1500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.item{
+    background-color: tomato;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
