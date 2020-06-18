@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+}
+
+/* .container{
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+
+/* .item{
+    background-color: tomato;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.alignTop{
+    align-self: flex-start;
+}
+
+.alignBottom{
+    align-self: ;
+} */ 
+
+/* without Flexbox */
+/* li{
+    display: inline-block;
+    background-color: green;
+    padding: 15px;
+    margin-right: 6px;
+    width: 75px;
+    text-align: center;
+
+}
+
+ul{
+    display: inline;
+}
+
+/* class for links */
+/* a{
+    text-decoration: none;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    height: 60px;
+}
+
+ul{
+    display: flex;
+    /* this brings links down on y-axis */
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+
+}
+
+li{
+    list-style: none;
+    /* This creates more space within box */
+    padding: 10px;
+    /* This puts space in between links */
+    margin-right: 15px;
+}
+
+li:hover{
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+

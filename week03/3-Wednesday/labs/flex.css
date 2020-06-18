@@ -1,3 +1,5 @@
+
+/* Mosaic Homework */
 * {
     margin: 0px;
 }
@@ -7,21 +9,105 @@
     height: 1500px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+ 
 
 }
 
 .item{
     background-color: tomato;
     height: 150px;
-    width: 150px;
+    /* width: 150px; */
     margin: 10px;
     font-size: 30px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    order: 5;
+    flex-grow: 1;
+
+}
+
+.flexgrow2{
+    flex-grow: 2;
+}
+
+.flexgrow4{
+    flex-grow: 4;
+}
+
+.order1{
+    order: 1;
+
+}
+
+.order2{
+    order: 2;
+
+}
+
+.order3{
+    order: 3;
+
+}
+
+.order4{
+    order: 4;
+
+}
+
+.order5{
+    order: 5;
+}
+
+.order-1{
+    order: -1;
+}
+
+
+/* Flex2 exercise */
+.container2{
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+} 
+
+.header{
+    background-color: tomato;
+    height: 200px;
+}
+
+.main{
+    height: 400px;
+    background-color: plum;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.footer{
+    height: 200px;
+    background-color: green;
+}
+
+.nav{
+    width: 20vw;
+    height: 200px;
+    background-color: blue;
+}
+
+.innerMain{
+    width: 60vw;
+    background-color: orange;
+}
+
+.ads{
+    background-color: yellow;
 
 }
