@@ -1,0 +1,14 @@
+/* Styles for Single Level Menu */
+.single-nav nav{
+    display: flex;
+ }
+
+.single-nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.single-nav li{
+    margin-right: 15px;
+    margin-left: 15px;
+}
