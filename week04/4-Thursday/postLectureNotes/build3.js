@@ -35,5 +35,21 @@ function buildNavBar(navBGColor, anchorList) {
     return nav;
 }
 
+var anchorList = [];
 
+var a = createAnchor("#", "Hello World!", "nav-item nav-link active");
+
+anchorList.push(a);
+
+a = createAnchor("#", "About Us", "nav-item nav-link active small pl-5");
+
+anchorList.push(a)
+
+a = createAnchor("#", "Houston Staff", "nav-item nav-link small pl-5");
+
+var navbar = buildNavBar("blue", anchorList);
+
+var body = document.querySelector('body');
+
+body.appendChild(navbar);
 

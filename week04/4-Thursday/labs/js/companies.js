@@ -11,3 +11,45 @@ const companies = [
 ];
 
 const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
+
+// for(index = 0; index < companies.length; index++){
+    // console.log(companies[index]);
+    // console.log(companies[1,0]);
+// }
+
+// companies.forEach(function(index){
+//     console.log(index);
+// })
+
+// var percent = .5
+
+// var newAges = ages.map(function(index){
+//     return index + 2;
+// })
+// console.log(newAges);
+
+// var names = ["Dan", "Michael", "Michah", "Woody", "Cainin", "Chris", "RJ"]
+
+// var greetingsArr = names.map(function(name){
+//     return `Hello ${name} how are you?`
+// })
+// console.log(greetingsArr[3]);
+
+// var newCo = companies.map(function(company){
+//     companyObj.end = 2020;
+//     return companyObj;
+// })
+// console.log(newCo);
+
+// var filterArr = ages.filter(function(age){
+//     return age % 2 == 0;
+// })
+
+
+//Callback coding. => replaces {Return
+// var filterArr = ages.filter(age => age % 2 == 0);
+// console.log(filterArr);
+
+//Array.some
+var result = ages.some(age => age > 64);
+console.log(result);
