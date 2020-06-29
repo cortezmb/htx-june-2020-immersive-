@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript </title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="page">
+      <h1></h1>
+      <h2>New Account</h2>
+      <form method="post" action="#">
+
+        <label for="username">Create a username: </label>
+        <input type="text" id="username" />
+        <div id="feedback"></div>
+
+        <label for="password">Create a password: </label>
+        <input type="password" id="password" />
+
+        <input type="submit" value="sign up" />
+
+      </form>
+    </div>
+    
+    <script>
+    
+    var username = document.querySelector('#username');
+    var feedback = document.querySelector('#feedback');
+    var minUserLength = 8;
+
+    username.addEventListener('blur', (e) =>{
+
+      var userNameLength = e.target.length;
+      console.log(userNameLength);
+
+      if (userNameLength < minUserLength){
+        feedback.textContent = "Username must be 5 letters long";
+      else
+        feedback.textContent = "";
+      }             
+    })
+    </script>
+
+      
+    
+  </body>
+</html>
