@@ -15,8 +15,23 @@ it should return an object like this:
 
 var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
-// Write code here
+// let sumPlusMinus = nums => {
 
-console.log(sumPlusMinus(nums));
+//     let posNumsSum = nums.filter(num => num > 0).reduce(acc, value) => acc + value);
+//     let negNumsSum = nums.filter(num => num < 0).reduce(acc, value) => acc + value);
+//     return 
+// }
+    
+// console.log(sumPlusMinus(nums));
 // {plus: 74, minus: -54}
 
+let sumPlusMinus = arr => (
+
+    arr.reduce(acc, elem)=> (
+        {
+            plus: elem > 0 ? acc.plus + elem : acc.plus,
+            minus: elem < 0 ? acc.minus - elem : acc.minus,
+        })        
+    , {plus: 0, minus: 0})
+
+console.log(sumPlusMinus(nums));

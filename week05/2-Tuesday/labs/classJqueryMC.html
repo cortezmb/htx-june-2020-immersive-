@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .myClass{
+            background-color: yellow;
+        }
+        .active{
+            background-color: blue;
+        }
+
+        .inactive{
+            background-color: grey;
+        }
+
+        div{
+            background-color:  lightblue;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <p>
+            <ul>
+                <li>Hello</li>
+                <li>Dallas</li>
+                <li id="Houston" class="myClass">Houston</li>
+                <li>Austin</li>
+                <li id="sanAntonio">San Antonio</li>
+            </ul>
+        </p>
+    </div>
+
+    <button>Click me!</button>
+
+    <form action="/class.html">
+
+        this is my form 
+        <button>Submit</button>
+    </form>
+    
+    <script
+  src="http://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+
+  <script>
+
+      $('div').hide()
+
+      $('button').click(() =>{
+
+        // $('div').show();
+        $('div').fadeIn(3000).slideToggle(3000);
+      })
+
+    //   $(() =>{
+
+
+    //     $('form').on('submit', (e)=>{
+
+    //         e.preventDefault()
+    //         console.log(e);
+    //     })
+
+        // $('button').click() => {
+            
+        //     $('#austin').toggleClass('active');
+        // }
+
+          //this is a function
+
+        //retreive p tag off html using DOM and Jquery
+        // let p = $('p');
+
+        // console.log(p);
+
+        // let li = $('li');
+
+        // console.log(li);
+
+        // let li = $('myClass');
+
+        // console.log(li);
+
+        // let $tag = ('#Houston')
+        
+        // $tag.html("Hello Houston")
+        // console.log($tag);
+
+        // $('#sanAntonio').html('<b>San Antonio is great</b>')
+
+        // //create an anchor tag
+        // let $anchor = $('<a>', {
+        //     'class': 'myClass',
+        //     'text': "Digital Class",
+        //     'href': 'http://digitalcrafts.com'
+        // });
+
+        // console.log($anchor);
+
+        // $tag.append($anchor);
+
+        // $tag.addClass('inactive')
+
+        
+      
+  </script>
+</body>
+</html>

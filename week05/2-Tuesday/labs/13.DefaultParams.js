@@ -8,14 +8,42 @@ Create new function and use it as a default parameter.
 
 */
 
-function square(a) {
-    console.log(a * a);
-}
+// function square(a) {
+//     console.log(a * a);
+// }
 
-square(10)
-// 100 
+// var missingArg = () =>{
+//     throw new Error('Function square requires an argument');    
+// }
 
-square();
+// let square = (a = missingArg()) => {
+//     console.log(a * a);
+//     return a * a; 
+// }
+    
+
+// square(10)
+// // 100 
+
+// console.log(square(9));
+// square();
 //BEFORE: NaN
 //AFTER: Uncaught Error: Function square requrires an agrument
 
+// function logArguments(){
+
+//     for(let i = 0; i < arguments.length; i++){
+//         console.log(arguments[i]);
+//     }
+// }
+
+function logArguments(...args){
+
+    for (let arg of args){
+        console.log(arg);
+    }
+}
+
+logArguments(2, 5, 7, 8, 9, 10)
+logArguments(2)
+logArguments(2, 4)

@@ -5,3 +5,6 @@ console.log(a, b);
 // second first
 
 
+[a, b] = [b, a]
+
+console.log(a, b);
