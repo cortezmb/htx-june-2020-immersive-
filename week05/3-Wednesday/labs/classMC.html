@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <form action="/action_page.js" method="GET">
+        <fieldset>
+            <legend>This is a legend</legend>
+            First name:<br>
+            <input type="text" value="Mickey"><br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse"><br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+
+        <form>
+            <label for="choose">Would you prefer a banana or cherry?</label>
+            <input id="choose" name="i_like" required>
+            <button>Submit</button>
+          </form>
+          <fieldset>
+
+            <form>
+                <div>
+                  <label for="choose">Would you prefer a banana or a cherry?</label>
+                  <input id="choose" name="i_like" required minlength="6" maxlength="6">
+                </div>
+                <div>
+                  <label for="number">How many would you like?</label>
+                  <input type="number" id="number" name="amount" value="1" min="1" max="10">
+                </div>
+                <div>
+                  <button>Submit</button>
+                </div>
+              </form>
+          </fieldset>
+          <fieldset>
+              <legend>email validator</legend>
+
+              <input type="email" id="t2" name="email" required>
+          </fieldset>
+      </form>
+
+      <form>
+        <div>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input id="choose" name="i_like" required minlength="6" maxlength="6">
+        </div>
+        <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" value="1" min="1" max="10">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <form>
+        <label for="choose">Do you prefer css or html?</label>
+        <input id="choose" name="i_like" required pattern="css|html|javascript">
+        <button>Submit</button>
+      </form>
+
+    <form onsubmit="myFunction()">
+        Enter name: 
+        <input type="text">
+    </form>
+
+    <form action="mailto:michaelcortez8@hotmail.com">
+        Enter name: 
+        <input type="text">
+      </form> -->
+
+      <!-- <form id="myForm">
+        Enter name: 
+        <input id="nameInput">
+      </form> -->
+      <!-- <form id="myForm">
+        Enter name: 
+        <input id="hi" name="brand" type="checkbox" value="volvo">
+        <input name="brand" type="radio" value="saab">
+        <input name="brand" type="radio" value="bmw">
+        <input type="submit">
+      </form> -->
+
+      <script
+  src="http://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous">
+</script>
+
+  <script>
+
+
+    //   $(()=>{
+       
+            $('#myForm').submit((e) => {
+                e.preventDefault();
+            // $('input:checked').val();//either volvo, saab, or bmw
+            console.log($('#hi').is(':checked')); //either true or false
+                // console.log($('input:checked').val());
+            })
+
+    //       //body of jquery
+    //       $('#myForm').submit(() => {
+    //         alert('nameInput').val();
+    //     })
+    //   })
+  </script>
+    <script>
+
+// var email = document.getElementById("#email");
+// email.addEventListener("input", (event) => {
+//   if (email.validity.typeMismatch) {
+//     email.setCustomValidity("I expect an e-mail, darling!");
+//   } else {
+//     email.setCustomValidity("");
+//   }
+// });
+// Constraint validation API methods = setCustomValidity
+// Constraint validation API properties = validity.typeMismatch
+
+// function myFunction() {
+//     console.log("form submitted!")
+//   };
+    </script>
+
+    <script>
+
+    // fetch('https://jsonplaceholder.typicode.com/albums')
+
+    // .then(response => response.json())
+
+    // .then(data => {
+
+    // console.log(data);
+
+    // console.log(data[3].title)
+    // })
+    // console.log("hello");
+    </script>
+
+    <script>
+
+  fetch('https://corona.lmao.ninja/v2/states')
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    console.log(data)
+
+    let html = data.map(stateObj =>{
+
+      return `<li>${stateObj.state} - ${stateObj.cases}</li>`
+
+    })
+
+    let ul = document.querySelector('ul');
+
+    ul.innerHTML = html.arr
+
+    // for(var i = 0; i < data.length; i++){
+    //   console.log(data[i].state);
+    //   console.log(data[i].cases);
+      
+    }
+  })
+
+    </script>
+</body>
+</html>
