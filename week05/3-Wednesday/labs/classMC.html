@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <ul></ul>
     <!-- <form action="/action_page.js" method="GET">
         <fieldset>
             <legend>This is a legend</legend>
@@ -154,21 +154,21 @@
 
     console.log(data)
 
-    let html = data.map(stateObj =>{
+    var html = data.map(stateObj =>{
 
       return `<li>${stateObj.state} - ${stateObj.cases}</li>`
 
     })
 
-    let ul = document.querySelector('ul');
+    let ul = document.getElementsByTagName('ul');
 
-    ul.innerHTML = html.arr
+    ul.document.getElementsByTagName('ul').innerHTML = html.arr;
 
     // for(var i = 0; i < data.length; i++){
     //   console.log(data[i].state);
     //   console.log(data[i].cases);
       
-    }
+    // }
   })
 
     </script>
